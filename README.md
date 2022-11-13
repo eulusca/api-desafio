@@ -3,7 +3,7 @@
 
 ### 💻 Techs
 - [x] Kotlin
-- [x] Maven
+- [x] Gradle
 - [x] Docker
 - [x] Spring Boot
 
