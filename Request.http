@@ -1,0 +1,51 @@
+### Create client
+
+POST http://localhost:8080/api/clients
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name" : "NameTest",
+  "phone" : "999999999",
+  "mail" : "mail@mail"
+}
+
+### Get client by id
+
+GET http://localhost:8080/api/clients/5
+
+Accept: application/json
+
+### Update client
+
+PUT http://localhost:8080/api/clients/5
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name" : "UpName",
+  "phone" : 999999999,
+  "mail" : "upmail@mail.com"
+}
+
+### Delete client
+
+DELETE http://localhost:8080/api/clients/1
+X-Api-Key: SECRET
+Accept: application/json
+
+### List clients
+
+GET http://localhost:8080/api/clients
+X-Api-Key: SECRET
+Accept: application/json
+
+### List clients with size parameter
+
+GET http://localhost:8080/api/clients/?size=4
+Accept: application/json
+
+### List clients with size and page parameter
+
+GET http://localhost:8080/api/clients?size=4&page=1
+Accept: application/json
